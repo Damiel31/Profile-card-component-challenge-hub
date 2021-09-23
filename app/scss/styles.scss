@@ -1,0 +1,102 @@
+@import "globals";
+@import "variables";
+
+
+main {
+    
+    .d-flex {
+        height: 50rem;
+    }
+
+    .card {
+        border: 0;
+        border-radius: 1.2em;
+        max-width: 23rem;
+
+        .profileBackground {
+            border-top-left-radius: 1.2rem;
+            border-top-right-radius: 1.2rem;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .profilePicture {
+                border-radius: 50%;
+                border: 6px solid #ffffff;
+                align-self: center;
+                margin-top: -4rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .profileName {
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+
+            .profileAge {
+                font-weight: 400;
+                color: $darkGray;
+            }
+
+            .profileAddress {
+                font-size: 1rem;
+                font-weight: 400;
+                color: $darkGray;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .profileStatus {
+            display: flex;
+            flex-direction: row;
+            
+            
+            h2 {
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+
+            span {
+                font-size: .8rem;
+                font-weight: 400;
+                color: $darkGray;
+
+            }
+
+            .followers  {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 1.5rem;
+                
+            }
+
+            .likes  {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 1.5rem;
+                
+            }
+
+            .photos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 1.5rem;
+                
+            }
+        }
+    }
+    
+}
+
+.attribution { 
+
+    font-size: 11px; text-align: center; 
+    a { color: hsl(228, 45%, 44%); }
+}
